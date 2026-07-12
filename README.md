@@ -10,7 +10,8 @@ This repo is separate from the engineering app repo:
 
 ## Start Here
 
-- [Commercial Roadmap](docs/snifferops-commercial-roadmap.md)
+- [Commercial Roadmap / Checklist](docs/snifferops-commercial-roadmap.md)
+- [Phase 1 Software Appliance Notes](docs/phase-1-software-appliance.md)
 
 ## Current Framing
 
