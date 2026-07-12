@@ -75,6 +75,8 @@ to hardware inventory too early.
 ### Scope Checklist
 
 - [x] Keep this `SnifferSales` repo as the commercial planning home.
+- [ ] Pick a public commercial name to replace `SnifferOps`.
+- [ ] Complete legal/name availability clearance.
 - [ ] Define product names and rough SKU ladder.
 - [ ] Decide what is included in each model.
 - [ ] Track parts, vendors, price ranges, lead times, and substitutions.
@@ -171,7 +173,10 @@ Goal: go from no public sales presence to a minimal credible sales operation.
 ## Open Decisions
 
 - [ ] Commercial repo structure after this initial roadmap.
-- [ ] Product name and branding status.
+- [x] Decision: `SnifferOps` should not be the public commercial brand. See
+  [Legal And Name Availability Check](legal-name-check.md).
+- [ ] New public product name and branding status. See
+  [Public Product Name Brief](public-name-brief.md).
 - [ ] Whether the first public offering is image-only, kit, or assembled unit.
 - [ ] Default admin username for public images.
 - [ ] Wi-Fi onboarding method for customers.

@@ -12,6 +12,8 @@ This repo is separate from the engineering app repo:
 
 - [Commercial Roadmap / Checklist](docs/snifferops-commercial-roadmap.md)
 - [Phase 1 Software Appliance Notes](docs/phase-1-software-appliance.md)
+- [Legal / Name Availability Check](docs/legal-name-check.md)
+- [Public Product Name Brief](docs/public-name-brief.md)
 
 ## Current Framing
 
