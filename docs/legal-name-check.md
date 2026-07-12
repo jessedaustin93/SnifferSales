@@ -8,10 +8,13 @@ search or filing anything.
 
 ## Names Under Review
 
-- Primary product mark: `SnifferOps`
-- Planning repo / internal commercial project: `SnifferSales`
+- Primary product mark: `Ethrox Detect`
+- Organization mark: `Ethrox Systems`
+- Historical/internal product codename: `SnifferOps`
+- Historical planning repo name: `SnifferSales`
 - Possible close variants to search: `Sniffer Ops`, `SnifferOS`, `Sniffer Pro`,
-  `Sniffer Node`, `Sniffer Appliance`, and any final SKU names.
+  `Sniffer Node`, `Sniffer Appliance`, `Ethrox`, `Ethrox Detect`, and any final
+  SKU names.
 
 ## Preliminary Findings
 
@@ -19,6 +22,8 @@ search or filing anything.
   exact-match product or trademark result during this pass.
 - [x] Broader similarity review found enough naming risk to avoid using
   `SnifferOps` as the public commercial brand.
+- [x] Planning name changed to Ethrox Detect and repo moved to
+  `Ethrox-Systems/ethrox-detect-planning`.
 - [x] DNS lookup did not resolve `snifferops.com`, `snifferops.net`,
   `snifferops.org`, `snifferops.io`, `sniffersales.com`, or `snifferos.com`.
 - [ ] Registrar availability is still unverified. A no-DNS result does not mean
@@ -32,6 +37,10 @@ search or filing anything.
 
 `SnifferOps` should be treated as an internal/software codename, not the final
 public product brand.
+
+`Ethrox Detect` is the current planning name, not a cleared legal conclusion.
+Run the same trademark, domain, common-law, package, app store, marketplace,
+and handle checks before public sales, packaging, or paid ads.
 
 The main concern is that `sniffer` is a common term in network/security/RF
 monitoring contexts. A descriptive or crowded root term can make a mark harder
@@ -77,7 +86,7 @@ proper USPTO filing review.
 ## Clearance Checklist
 
 - [ ] Search USPTO exact word marks: `SnifferOps`, `Sniffer Ops`, `SnifferOS`,
-  and final SKU names.
+  `Ethrox`, `Ethrox Detect`, and final SKU names.
 - [ ] Search USPTO similar names and variants around `Sniffer`, `Ops`, `Field
   Ops`, `Sensor Ops`, `RF Ops`, and cybersecurity/network monitoring terms.
 - [ ] Check whether `SNIFFER` or related legacy marks are active and what goods
@@ -98,8 +107,8 @@ proper USPTO filing review.
 
 - [x] Rename for public commercial use.
 - [x] Keep `SnifferOps` only as the internal/software codename during Phase 1.
-- [ ] Choose at least five candidate public names before public marketing.
-- [ ] Run the same clearance checklist against each candidate name.
+- [x] Select current public planning name: Ethrox Detect.
+- [ ] Run the same clearance checklist against Ethrox Detect and backup names.
 - [ ] Do not print cases, labels, packaging, or paid ads with `SnifferOps`.
 - [ ] Do not claim `TM`/`R` status in public copy until the appropriate mark
   usage is reviewed.

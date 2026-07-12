@@ -2,13 +2,15 @@
 
 Updated: 2026-07-12
 
-`SnifferOps` remains the internal/software codename. The commercial product
-needs a new public name before website copy, case labels, packaging, or paid
-sales.
+The commercial product line is now planned as **Ethrox Detect**.
+
+`SnifferOps` remains a historical/internal software codename until the
+engineering repo migration is prepared. Do not use `SnifferOps` for public
+website copy, case labels, packaging, or paid sales.
 
 ## Naming Goal
 
-Find a name that is simple, distinctive, easy to say, and hard to confuse with
+Use a name that is simple, distinctive, easy to say, and hard to confuse with
 existing network/security/RF tools.
 
 The target is not a technical category label. It should feel like a real product
@@ -35,15 +37,13 @@ portable units, and lab/station hardware.
 - Names that sound too aggressive for passive defensive awareness.
 - Names that would be embarrassing on a case, website, invoice, or support email.
 
-## Candidate Workflow
+## Remaining Clearance Workflow
 
-- [ ] Generate 20-40 raw candidates.
-- [ ] Cut anything hard to pronounce, spell, or explain.
-- [ ] Cut names that are too similar to known security/network/RF brands.
-- [ ] Check domains and handles for the top 5-10.
-- [ ] Run USPTO/common-law searches for the top 3-5.
-- [ ] Pick one primary name and two backups.
-- [ ] Only then update public docs, labels, website copy, and SKU names.
+- [x] Pick current public product name: Ethrox Detect.
+- [ ] Check domains and handles for Ethrox Detect and likely SKU names.
+- [ ] Run USPTO/common-law searches for Ethrox Detect.
+- [ ] Keep two backup names until clearance is complete.
+- [ ] Only then update public labels, website copy, SKU names, and packaging.
 
 ## Candidate Table
 
@@ -51,4 +51,4 @@ Do not mark a name as usable until the clearance checks are done.
 
 | Name | Feel | Initial Notes | Status |
 |---|---|---|---|
-| TBD | TBD | Generate candidates after Phase 1 image validation or during downtime. | pending |
+| Ethrox Detect | Defensive signal-awareness product line | Current planning name under Ethrox Systems. Needs formal clearance before paid sales. | selected, unverified |

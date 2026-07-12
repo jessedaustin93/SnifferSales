@@ -1,4 +1,4 @@
-# SnifferOps Commercial Roadmap
+# Ethrox Detect Product Roadmap
 
 Updated from the original Phase 1 installer/image plan on 2026-07-12.
 
@@ -7,33 +7,38 @@ Updated from the original Phase 1 installer/image plan on 2026-07-12.
 Keep software appliance work, sell-ready hardware work, and go-to-market work
 separate so each phase has a clear finish line.
 
-The engineering repo remains the source of SnifferOps software:
+The engineering repo remains the source of the appliance software while the
+rename is prepared:
 
 - `https://github.com/jessedaustin93/Sniffer-Ops`
 
-This commercial repo tracks productization and sales planning:
+This planning repo tracks Ethrox Detect productization and sales planning:
 
-- `https://github.com/jessedaustin93/SnifferSales`
+- `https://github.com/Ethrox-Systems/ethrox-detect-planning`
+
+Historical note: this product was planned under the `SnifferOps` and
+`SnifferSales` codenames before moving under Ethrox Systems.
 
 ## Phase 1 - Software Appliance Foundation
 
 Goal: produce and validate the software-only appliance build.
 
-This phase is done when SnifferOps can be installed or flashed as a reproducible
-headless appliance and verified on a Pi Zero 2 W class target.
+This phase is done when Ethrox Detect can be installed or flashed as a
+reproducible headless appliance and verified on a Pi Zero 2 W class target.
 
 ### Scope Checklist
 
 - [x] Headless installer: `linux/deploy/install-appliance.sh`.
 - [ ] `.deb` or packaged installer, if we decide it is needed.
-- [ ] Flashable OS image: `snifferops-os-vX.img.xz`.
-- [x] System service: `snifferops.service`.
-- [x] Stable node identity and config under `/var/lib/snifferops`.
-- [x] No-GTK appliance path using `snifferops_linux.py --headless`.
+- [ ] Flashable OS image: `ethrox-detect-os-vX.img.xz`.
+- [x] System service: currently `snifferops.service`; rename with the
+  engineering repo migration.
+- [x] Stable node identity and config under the appliance data directory.
+- [x] No-GTK appliance path using the current headless runner.
 - [x] First-boot provisioning.
 - [x] Read-only-root or overlay-root durability implemented in repo.
 - [ ] Read-only-root flashed-image validation on real Pi.
-- [x] Writable SnifferOps data path planned under `/var/lib/snifferops`.
+- [x] Writable appliance data path planned.
 - [x] Self-test script for assembly and image validation.
 - [ ] CI image build publishes image and checksum artifacts.
 
@@ -43,7 +48,7 @@ headless appliance and verified on a Pi Zero 2 W class target.
 - [ ] `.img.xz` and `.sha256` are available and verify cleanly.
 - [ ] Image boots on a Pi Zero 2 W from a freshly flashed card.
 - [x] SSH/admin access works on the hand-installed guinea-pig Pi.
-- [x] `snifferops.service` starts automatically on the hand-installed Pi.
+- [x] Current system service starts automatically on the hand-installed Pi.
 - [x] API answers on port `8766` on the hand-installed Pi.
 - [x] Node ID persists across reboot on the hand-installed Pi.
 - [x] Wi-Fi and onboard Bluetooth scanning work without extra peripherals.
@@ -67,16 +72,17 @@ headless appliance and verified on a Pi Zero 2 W class target.
 - [ ] Fulfillment or turnaround-time promises.
 - [ ] Support policy.
 
-## Phase 2 - Commercial Repo And Product Definitions
+## Phase 2 - Product Definitions
 
 Goal: turn the working software appliance into a product plan without committing
 to hardware inventory too early.
 
 ### Scope Checklist
 
-- [x] Keep this `SnifferSales` repo as the commercial planning home.
-- [ ] Pick a public commercial name to replace `SnifferOps`.
-- [ ] Complete legal/name availability clearance.
+- [x] Transfer planning repo to Ethrox Systems.
+- [x] Rename planning repo to `ethrox-detect-planning`.
+- [x] Reframe the public product line as Ethrox Detect.
+- [ ] Complete legal/name availability clearance for Ethrox Detect.
 - [ ] Define product names and rough SKU ladder.
 - [ ] Decide what is included in each model.
 - [ ] Track parts, vendors, price ranges, lead times, and substitutions.
@@ -167,15 +173,15 @@ Goal: go from no public sales presence to a minimal credible sales operation.
 - [x] Do not add new feature scope until the image is tested.
 - [x] Prepare the flash/test checklist.
 - [x] Keep the current Pi guinea-pig running as the known-good baseline.
-- [ ] When the artifact is ready, flash a card and validate the Phase 1 acceptance
-  checklist before declaring Phase 1 complete.
+- [ ] When the artifact is ready, flash a card and validate the Phase 1
+  acceptance checklist before declaring Phase 1 complete.
 
 ## Open Decisions
 
-- [ ] Commercial repo structure after this initial roadmap.
+- [ ] Final commercial repo structure after this initial roadmap.
 - [x] Decision: `SnifferOps` should not be the public commercial brand. See
   [Legal And Name Availability Check](legal-name-check.md).
-- [ ] New public product name and branding status. See
+- [x] Public product name selected for current planning: Ethrox Detect. See
   [Public Product Name Brief](public-name-brief.md).
 - [ ] Whether the first public offering is image-only, kit, or assembled unit.
 - [ ] Default admin username for public images.

@@ -1,19 +1,22 @@
 # Phase 1 Software Appliance Notes
 
 This page mirrors the commercial-relevant parts of `jessedaustin93/Sniffer-Ops`
-so the sales/product repo has the status without duplicating source code.
+so the Ethrox Detect planning repo has the status without duplicating source
+code.
 
 ## Source Of Truth
 
 - Engineering repo: `https://github.com/jessedaustin93/Sniffer-Ops`
 - Appliance branch: `codex/appliance-image`
 - Current release candidate tag observed: `v0.1.0-rc1`
+- Product name in planning docs: Ethrox Detect.
+- Historical/internal codename in current engineering repo: SnifferOps.
 
 ## Appliance Components
 
 - `linux/deploy/install-appliance.sh` - headless installer.
-- `linux/deploy/snifferops.service` - systemd service running
-  `snifferops_linux.py --headless`.
+- `linux/deploy/snifferops.service` - current systemd service running the
+  headless appliance. Rename during the engineering repo migration.
 - `linux/deploy/firstboot/` - one-shot first-boot provisioning.
 - `linux/deploy/selftest.sh` - health / assembly test.
 - `linux/deploy/durability/` - read-only-root hardening scripts.
@@ -23,12 +26,8 @@ so the sales/product repo has the status without duplicating source code.
 ## Current Validated Guinea-Pig Unit
 
 - Hardware: Raspberry Pi Zero 2 W.
-- Hostname: `snifferops-4a939c`.
-- Node ID: `4a939c799f994421`.
-- USB route: `192.168.7.2`.
-- Wi-Fi route observed: `192.168.50.210`.
 - API: port `8766`.
-- Service: `snifferops.service`.
+- Service: current SnifferOps-era systemd service.
 
 Validated on the hand-installed Pi:
 
@@ -73,8 +72,8 @@ Use this once the GitHub Actions image artifact is available:
 - [ ] Flash image to SD card.
 - [ ] Boot Pi Zero 2 W.
 - [ ] Confirm SSH/admin access.
-- [ ] Confirm hostname format `snifferops-<shortid>`.
-- [ ] Confirm `snifferops.service` is active.
+- [ ] Confirm hostname format follows the current appliance naming scheme.
+- [ ] Confirm the appliance service is active.
 - [ ] Confirm API responds on `:8766`.
 - [ ] Confirm `/` is read-only or overlay-backed.
 - [ ] Confirm `/var/lib/snifferops` is writable and persistent.
@@ -88,6 +87,6 @@ Use this once the GitHub Actions image artifact is available:
 
 ## Notes For Commercial Planning
 
-Phase 1 proves the software appliance foundation. It does not prove a sell-ready
-physical product, a case, battery runtime, antenna performance, parts
-availability, pricing, website, support model, or fulfillment turnaround.
+Phase 1 proves the software appliance foundation. It does not prove a
+sell-ready physical product, a case, battery runtime, antenna performance,
+parts availability, pricing, website, support model, or fulfillment turnaround.
