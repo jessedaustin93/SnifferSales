@@ -8,7 +8,8 @@ code.
 
 - Engineering repo: `https://github.com/jessedaustin93/Sniffer-Ops`
 - Appliance branch: `codex/appliance-image`
-- Current release candidate tag observed: `v0.1.0-rc1`
+- Release candidate: `v0.1.0-rc1`. The CI image build is green; a prerelease is
+  published with a flashable `.img.xz` and its SHA-256 checksum.
 - Product name in planning docs: Ethrox Detect.
 - Historical/internal codename in current engineering repo: SnifferOps.
 
@@ -36,6 +37,8 @@ Validated on the hand-installed Pi:
 - [x] node ID persists
 - [x] Wi-Fi scanner works
 - [x] onboard Bluetooth scanner works
+- [x] RTL-SDR scanner works (USB dongle enumerated and accessible to the
+  unprivileged service user; no antenna fitted, so pipeline only)
 - [x] no-peripheral mode works
 - [x] `selftest.sh` returns `RESULT: OK`
 - [x] three clean reboot cycles passed
@@ -64,7 +67,8 @@ Not yet validated:
 
 ## Phase 1 Flash Test Checklist
 
-Use this once the GitHub Actions image artifact is available:
+The GitHub Actions image artifact is now available (`v0.1.0-rc1` prerelease), so
+this checklist can be run against it:
 
 - [ ] Download `.img.xz`.
 - [ ] Download `.sha256`.
