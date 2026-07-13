@@ -5,7 +5,7 @@ SKUs, parts planning, cases, fulfillment, legal wording, and launch work.
 
 This repo is separate from the engineering app repo:
 
-- Software / appliance source: `jessedaustin93/Sniffer-Ops`
+- Software / appliance source: `Ethrox-Systems/ethrox-detect`
 - Commercial planning: `Ethrox-Systems/ethrox-detect-planning`
 
 `SnifferOps` and `SnifferSales` are retained only as historical/internal
@@ -26,3 +26,12 @@ validation.
 
 Sell-ready physical units, cases, peripherals, batteries, screens, antennas,
 parts lists, pricing, website, and fulfillment are separate later phases.
+
+Current keep-prototype status:
+
+- Pi Zero 2 W keep-prototype is running Ethrox Detect `0.2.0-rc.1+1`.
+- Wi-Fi route: `192.168.50.210`.
+- USB rescue route: `192.168.7.2`.
+- Overnight power-only validation is configured through an on-device timer.
+- T5810B hub health/awareness GET routes work, but sync POST currently times
+  out and needs engineering follow-up.

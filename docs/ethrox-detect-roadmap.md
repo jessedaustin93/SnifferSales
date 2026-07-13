@@ -7,10 +7,9 @@ Updated from the original Phase 1 installer/image plan on 2026-07-12.
 Keep software appliance work, sell-ready hardware work, and go-to-market work
 separate so each phase has a clear finish line.
 
-The engineering repo remains the source of the appliance software while the
-rename is prepared:
+The engineering repo is the source of the appliance software:
 
-- `https://github.com/jessedaustin93/Sniffer-Ops`
+- `https://github.com/Ethrox-Systems/ethrox-detect`
 
 This planning repo tracks Ethrox Detect productization and sales planning:
 
@@ -30,9 +29,8 @@ reproducible headless appliance and verified on a Pi Zero 2 W class target.
 
 - [x] Headless installer: `linux/deploy/install-appliance.sh`.
 - [ ] `.deb` or packaged installer, if we decide it is needed.
-- [ ] Flashable OS image: `ethrox-detect-os-vX.img.xz`.
-- [x] System service: currently `snifferops.service`; rename with the
-  engineering repo migration.
+- [x] Flashable OS image: `ethrox-detect-os-0.2.0-rc.1-build.1.img.xz`.
+- [x] System service: `ethrox-detect.service`.
 - [x] Stable node identity and config under the appliance data directory.
 - [x] No-GTK appliance path using the current headless runner.
 - [x] First-boot provisioning.
@@ -44,17 +42,19 @@ reproducible headless appliance and verified on a Pi Zero 2 W class target.
 
 ### Acceptance Checklist
 
-- [ ] CI image builds successfully.
-- [ ] `.img.xz` and `.sha256` are available and verify cleanly.
-- [ ] Image boots on a Pi Zero 2 W from a freshly flashed card.
-- [x] SSH/admin access works on the hand-installed guinea-pig Pi.
-- [x] Current system service starts automatically on the hand-installed Pi.
-- [x] API answers on port `8766` on the hand-installed Pi.
-- [x] Node ID persists across reboot on the hand-installed Pi.
+- [x] Local pi-gen image builds successfully.
+- [x] `.img.xz` and SHA-256 are available and verify cleanly.
+- [x] Image boots on a Pi Zero 2 W from a freshly flashed card.
+- [x] SSH/admin access works on the keep-prototype Pi.
+- [x] Current system service starts automatically on the keep-prototype Pi.
+- [x] API answers on port `8766` on the keep-prototype Pi.
+- [x] Node ID persists across reboot on the keep-prototype Pi.
 - [x] Wi-Fi and onboard Bluetooth scanning work without extra peripherals.
 - [x] SDR/cellular are disabled unless hardware is present.
 - [x] `selftest.sh` returns `RESULT: OK` on the hand-installed Pi.
 - [x] Three clean reboot cycles pass on the hand-installed Pi.
+- [ ] Rebuild and reflash from the latest appliance fixes so the image does not
+  rely on live card repairs.
 - [ ] Read-only/overlay root and writable data partition behavior are confirmed
   on a freshly flashed CI image.
 - [ ] Controlled power-loss testing passes on read-only image.
@@ -169,12 +169,16 @@ Goal: go from no public sales presence to a minimal credible sales operation.
 
 ## Immediate Work While Phase 1 Builds
 
-- [ ] Let the current CI image build finish.
+- [x] Build and flash the current local pi-gen image.
 - [x] Do not add new feature scope until the image is tested.
 - [x] Prepare the flash/test checklist.
-- [x] Keep the current Pi guinea-pig running as the known-good baseline.
-- [ ] When the artifact is ready, flash a card and validate the Phase 1
-  acceptance checklist before declaring Phase 1 complete.
+- [x] Keep the current Pi keep-prototype running as the known-good baseline.
+- [x] Configure power-only overnight logging.
+- [ ] Review the power-only overnight run.
+- [ ] Attach RTL-SDR and repeat overnight validation.
+- [ ] Debug T5810B `POST /ethrox-detect/sync` timeout.
+- [ ] Rebuild and reflash from the latest appliance fixes before declaring
+  Phase 1 complete.
 
 ## Open Decisions
 
